@@ -39,7 +39,7 @@ Fahrenheit = (Celsius × 9/5) + 32
 - If the input field is empty or not a number:  
   `Please enter a valid input`
   
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML** – Page structure
 - **CSS** – Styling (linked in `style.css`)
