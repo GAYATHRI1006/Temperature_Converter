@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Celsius to Fahrenheit</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Temperature in celsius">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert to Fahrenheit</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function convert(){
+            const celVal = Number(document.getElementById("input").value)
+            const result = document.getElementById("result")
+            if(celVal==" " || isNaN(celVal))
+            result.innerHTML="Please enter a valid input"
+            else{
+            const fahVal = (celVal*9/5) + 32
+            result.innerHTML=fahVal + " degree Fahrenheit"
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
